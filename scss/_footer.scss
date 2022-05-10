@@ -1,0 +1,215 @@
+.footer {
+    @include full-width;
+    background-image: url(../img/footer.png);
+    padding-top: 70px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+
+    @media (max-width: 768px) {
+        padding-top: 35px;
+    }
+}
+
+.footer-top {
+    margin-bottom: 10px;
+}
+
+.about-footer {
+    h3 {
+        font-size: 18px;
+        font-weight: 700;
+        color: $white;
+        margin-bottom: 25px;
+        text-transform: uppercase;
+        line-height: 1.4;
+    }
+
+    p {
+        font-size: 13px;
+        font-weight: 200;
+        color: $white;
+        margin-bottom: 32px;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+            margin-bottom: 15px;
+            position: relative;
+            padding-left: 30px;
+
+            a {
+                font-size: 14.02px;
+                color: $white;
+
+                &:hover {
+                    color: $red;
+                }
+
+                i {
+                    color: $red;
+                    margin-right: 13px;
+                    position: absolute;
+                    left: 0;
+                    top: 7px;
+                }
+            }
+        }
+    }
+}
+
+.footer-links {
+    margin-bottom: 25px;
+
+    h3 {
+        font-size: 16.02px;
+        color: $red;
+        text-transform: uppercase;
+        margin-bottom: 12px;
+        letter-spacing: 0.2px;
+    }
+
+    ul {
+        li {
+            a {
+                font-size: 13.02px;
+                color: #d0d0d0;
+                font-weight: 200;
+                display: block;
+                padding-bottom: 9px;
+
+                &:hover {
+                    color: $red;
+                }
+
+                i {
+                    margin-right: 11px;
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}
+
+.footer-bottom {
+    margin-bottom: 25px;
+}
+
+.fmenu-fsocial {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media (max-width: 425px) {
+        text-align: center;
+    }
+}
+
+ul.footer-menu {
+    font-size: 0;
+
+    @media (max-width: 425px) {
+        width: 100%;
+        margin-bottom: 15px;
+
+    }
+
+    li {
+        display: inline-block;
+
+        @media (max-width: 425px) {
+            display: block;
+        }
+
+        a {
+            font-size: 13px;
+            color: $white;
+            padding: 0 14.5px;
+            border-right: 2px solid $white;
+
+            @media (max-width: 425px) {
+                font-size: 11px;
+                padding: 5px 10px;
+                border-width: 1px;
+                display: block;
+                border-right: none;
+                border-bottom: 1px solid #101e2e;
+            }
+
+            &:hover {
+                color: $red;
+            }
+        }
+
+        &:last-child {
+            a {
+                padding-right: 0;
+                border-right: 0;
+            }
+        }
+    }
+}
+
+ul.footer-social {
+    @media (max-width: 425px) {
+        width: 100%;
+    }
+
+    li {
+        display: inline-block;
+
+        a {
+            color: $white;
+            padding: 0 6px;
+
+            &:hover {
+                color: $red;
+            }
+        }
+
+        &:last-child {
+            a {
+                padding-right: 0;
+            }
+        }
+    }
+}
+
+.copyright-section {
+    @include full-width;
+    background: #0d203b;
+
+    .copyright {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 0;
+
+        @media (max-width: 425px) {
+            display: block;
+            text-align: center;
+        }
+
+        p {
+            font-size: 13.03px;
+            color: $white;
+
+            @media (max-width: 425px) {
+                font-size: 10px;
+                margin-bottom: 5px;
+            }
+
+            a {
+                color: $white;
+
+                &:hover {
+                    color: $red;
+                }
+            }
+        }
+    }
+}

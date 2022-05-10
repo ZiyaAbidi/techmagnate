@@ -1,0 +1,123 @@
+.news-events {
+    @include full-width;
+}
+.news-sec {
+    .img-style {
+        margin-bottom: 0;
+
+        img {
+            transition: 0.5s;
+        }
+    }
+    .news-content {
+        margin: 0 10px;
+        background: $white;
+        position: relative;
+        top: -30px;
+        padding: 35px 20px 60px;
+        -webkit-box-shadow: 0 0 10px 0 rgba(19, 46, 85, 0.2);
+        -moz-box-shadow: 0 0 10px 0 rgba(19, 46, 85, 0.2);
+        box-shadow: 0 0 10px 0 rgba(19, 46, 85, 0.2);
+        border-bottom: 2px solid $blue;
+        transition: 0.5s;
+
+        a {
+            font-size: 16px;
+            font-weight: 500;
+            color: $txt-color;
+            display: block;
+            margin-bottom: 18px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+
+            @media (max-width: 768px) {
+                font-size: 13px;
+            }
+
+            &:hover {
+                color: $blue;
+            }
+        }
+
+        .line {
+            position: relative;
+            height: 3px;
+            width: 40px;
+            background: $red;
+            margin: 0 auto 25px;
+
+            @media (max-width: 768px) {
+                margin: 0 auto 15px;
+            }
+        }
+
+        ul {
+            font-size: 0;
+
+            li {
+                display: inline-block;
+                padding: 0 10px;
+
+                &:first-child {
+                    border-right: 1px solid #777777;
+                }
+
+                a {
+                    font-size: 14px;
+                    color: $txt-color;
+                    margin-bottom: 0;
+                    line-height: 1;
+
+                    @media (max-width: 768px) {
+                        font-size: 13px;
+                    }
+
+                    &:hover {
+                        color: $blue;
+                    }
+                }
+            }
+        }
+
+        .arrow-btn {
+            width: 45px;
+            height: 45px;
+            background-color: $white;
+            border: 1px solid $white;
+            border-radius: 100%;
+            color: $red;
+            position: absolute;
+            bottom: -22px;
+            margin-bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            -webkit-box-shadow: 0 0 10px 0 rgba(19, 46, 85, 0.2);
+            -moz-box-shadow: 0 0 10px 0 rgba(19, 46, 85, 0.2);
+            box-shadow: 0 0 10px 0 rgba(19, 46, 85, 0.2);
+            z-index: 99;
+
+            &:hover {
+                background-color: $btn-color;
+                color: $white;
+                border-color: $btn-color;
+            }
+        }
+    }
+
+    &:hover {
+        .news-content {
+            top: -40px;
+        }
+
+        .img-style {
+            img {
+                transform: scale(1.1);
+            }
+        }
+    }
+}

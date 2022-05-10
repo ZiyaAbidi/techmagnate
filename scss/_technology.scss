@@ -1,0 +1,123 @@
+.technology {
+    @include full-width;
+}
+
+.no-padding {
+    padding-left: 15px;
+    padding-right: 15px;
+
+    .col-lg-6 {
+        padding: 0;
+    }
+}
+
+.technology-solutions {
+    @media (max-width: 991px) {
+        margin-bottom: 15px;
+    }
+
+    .media {
+        align-items: center;
+        justify-content: space-between;
+
+        @media (max-width: 600px) {
+            flex-wrap: wrap;
+        }
+
+        .media-left,
+        .media-right {
+            height: 350px;
+            width: 50%;
+            background: $red;
+            overflow: hidden;
+
+            @media (max-width: 991px) {
+                width: 292px;
+            }
+
+            @media (max-width: 600px) {
+                width: 100%;
+                height: auto;
+                margin-bottom: 15px;
+            }
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .media-body {
+            padding-left: 30px;
+            padding-right: 30px;
+            width: 50%;
+
+            @media (max-width: 600px) {
+                width: 100%;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            img {
+                margin-bottom: 25px;
+            }
+
+            h4 {
+                font-size: 22px;
+                color: #292929;
+                margin-bottom: 24px;
+                font-weight: 600;
+
+                @media (max-width: 768px) {
+                    font-size: 18px;
+                }
+            }
+
+            p {
+                font-size: 15px;
+                color: $txt-color;
+                margin-bottom: 30px;
+                line-height: 1.6;
+
+                @media (max-width: 768px) {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+
+.order_2 .media, .order_3 .media, .order_6 .media {
+    @media (max-width: 991px) {
+        flex-direction: row-reverse;
+    }
+}
+
+.order_3 .media, .order_4 .media {
+    @media (max-width: 600px) {
+        flex-direction: column-reverse;
+    }
+}
+
+.view-details {
+    font-size: 14px;
+    color: $blue;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    @media (max-width: 768px) {
+        font-size: 13px;
+    }
+
+    i {
+        color: $red;
+        position: relative;
+        left: 3px;
+    }
+
+    &:hover {
+        color: $btn-color;
+    }
+}

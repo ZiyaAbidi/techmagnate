@@ -1,0 +1,87 @@
+.clients {
+    @include full-width;
+}
+
+.testimonials-carousel {
+    .owl-nav {
+        position: absolute;
+        top: -88px;
+        right: 0;
+
+        .owl-prev,
+        .owl-next {
+            display: inline-block;
+            padding: 0 15px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: #a9a9a9;
+            transition: 0.5s;
+            font-size: 20px;
+
+            &:hover {
+                color: $btn-color;
+            }
+        }
+
+        .owl-prev {
+            border-right: 1px solid #a9a9a9;
+        }
+    }
+
+    .item {
+        padding: 10px;
+    }
+}
+
+.testimonials {
+    text-align: center;
+    -webkit-box-shadow: 0 0 10px 0 rgba(19, 46, 85, 0.2);
+    -moz-box-shadow: 0 0 10px 0 rgba(19, 46, 85, 0.2);
+    box-shadow: 0 0 10px 0 rgba(19, 46, 85, 0.2);
+    padding: 40px 35px;
+
+    .img-style {
+        width: 110px;
+        height: 110px;
+        border-radius: 100%;
+        border: 1px solid $white;
+        margin: 0 auto 30px;
+
+        img {
+            margin: 0 auto;
+        }
+    }
+
+    .details-client {
+        h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: $txt-color;
+            margin-bottom: 5px;
+        }
+
+        h4 {
+            font-size: 15px;
+            color: #919191;
+            margin-bottom: 20px;
+
+            span {
+                color: $txt-color;
+            }
+        }
+    }
+
+    .line {
+        position: relative;
+        height: 3px;
+        width: 40px;
+        background: $red;
+        margin: 0 auto 25px;
+    }
+
+    p {
+        font-size: 15px;
+        color: $txt-color;
+    }
+}
